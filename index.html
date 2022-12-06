@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bikesburgh Installation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul>
+  <li><a href="video.html">Find out more by clicking here!</a></li>
+  <li style="float:left"><p>Welcome to Bikesburgh!</li>
+</ul>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="rainbow.jpg" style="width:100%">
+    <div class="text">This is the longest rainbow bike path in the world, located at Utrecht University in the Netherlands. Elias van Mourik (shown above) said in an interview, "The world can sometimes be a scary place, so we might as well paint it in beautiful colors to make it less scary". </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="french.jpg" style="width:100%">
+    <div class="text">A section of Rue de Rivoli that has recently been reserved permanently for bicyclists and busses. In the last few years, Paris has been rapidly redeveloping roads into bike-safe paths.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="parkburg.jpg" style="width:100%">
+    <div class="text">The Park Bridge, or as they call it in Antwerp, Belgium, Parkburg, is an architectural and structural masterpiece. This bridge looks more like an art installation, but holds a major function of crossing an intersection of two high-capacity roads and a tram line.</div>
+  </div>
+
+  <!--Check this W3 for documentation. https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+
+  <!-- Next and previous buttons
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+-->
+
+<!-- The dots/circles
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+-->
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+
+</script>
+
+</body>
+</html>
