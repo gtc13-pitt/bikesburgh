@@ -23,7 +23,7 @@ li p {
   padding: 0px 20px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 12pt;
 
 
 }
@@ -36,7 +36,7 @@ li a {
   text-decoration: none;
   font-weight: bold;
 
-  font-size: 20pt;
+  font-size: 12pt;
 }
 
 li  a:hover {
